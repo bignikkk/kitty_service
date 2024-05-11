@@ -13,26 +13,24 @@ services:
     env_file: .env
 
   backend:
-    build: ./backend/
+    image: bignikkk/kittygram_backend
     env_file: .env
     volumes:
       - static:/backend_static
       - media:/media
 
   frontend:
+    image: bignikkk/kittygram_frontend
     env_file: .env
-    build: ./frontend/
     command: cp -r /app/build/. /frontend_static/
     volumes:
       - static:/frontend_static
       
   gateway:
-    build: ./nginx/
+    image: bignikkk/kittygram_gateway
     env_file: .env
     ports:
       - 9000:80
     volumes:
       - static:/staticfiles
       - media:/media
-
-    
