@@ -1,9 +1,4 @@
-database: django
-user: django_user
-password: mysecretpassword
-host: 127.0.0.1
-port: 5432
-base_url: https://kittygraming.ddnsking.com
-static_files_path: /home/yc-user/kittygram/collected_static
-verbosity: 2
-failfast: false
+repo_owner: bignikkk
+kittygram_domain: https://kittygraming.ddnsking.com
+taski_domain: https://projecting.ddnsking.com
+dockerhub_username: bignikkk
