@@ -45,8 +45,6 @@ jobs:
         POSTGRES_USER: django_user
         POSTGRES_PASSWORD: mysecretpassword
         POSTGRES_DB: django
-        # Сервер БД запущен в Docker, но его порт проброшен на хост
-        # Поэтому подключаемся к 127.0.0.1:5432
         DB_HOST: 127.0.0.1
         DB_PORT: 5432
       run: |
