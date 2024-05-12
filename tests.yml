@@ -1,14 +1,14 @@
 database:
-  POSTGRES_USER: django_user
-  POSTGRES_PASSWORD: mysecretpassword
-  POSTGRES_DB: django
-  DB_HOST: 127.0.0.1
-  DB_PORT: 5432
+  POSTGRES_USER:django_user
+  POSTGRES_PASSWORD:mysecretpassword
+  POSTGRES_DB:django
+  DB_HOST:127.0.0.1
+  DB_PORT:5432
 
 test_environment:
-  base_url: https://kittygraming.ddnsking.com
-  static_files_path: /home/yc-user/kittygram/collected_static
+  base_url:https://kittygraming.ddnsking.com
+  static_files_path:/home/yc-user/kittygram/collected_static
 
 test_framework:
-  verbosity: 2
-  failfast: false
+  verbosity:2
+  failfast:false
