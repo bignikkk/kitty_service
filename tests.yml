@@ -1,14 +1,25 @@
-database:
-  user: django_user
-  password: mysecretpassword
-  name: django
-  host: 127.0.0.1
-  port: 5432
+name: Run Tests
 
-test_environment:
-  base_url: https://kittygraming.ddnsking.com
-  static_files_path: /home/yc-user/kittygram/collected_static
+on:
+  push:
+    branches: [ main ]
+  pull_request:
 
-test_framework:
-  verbosity: 2
-  failfast: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Run tests
+      run: pytest
