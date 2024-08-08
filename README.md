@@ -1,8 +1,8 @@
-### Проект KITTYGRAM
+### Проект KITTY_SERVICE
 
-KITTYGRAM - это веб-приложение для обмена фотографиями домашних питомцев. Пользователи могут добавлять данные о своих котах, такие как фотографии, имя, цвет и год рождения, а также просматривать профили котов других пользователей.
+KITTY_SERVICE - это веб-приложение для обмена фотографиями домашних питомцев. Пользователи могут добавлять данные о своих котах, такие как фотографии, имя, цвет и год рождения, а также просматривать профили котов других пользователей.
 
-
+Ознакомиться с KITTY_SERVICE можно тут: https://foodgraming.ddnsking.com
 ### Статус CI/CD:
 
 [![CI/CD Status](https://github.com/bignikkk/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/bignikkk/kittygram_final/actions/workflows/main.yml)
@@ -24,7 +24,7 @@ GitHub Actions
 
 Укажите следующие переменные среды в файле .env:
 
-   - POSTGRES_DB: название базы данных PostgreSQL для проекта Kittygram.
+   - POSTGRES_DB: название базы данных PostgreSQL для проекта Kitty_service.
    - POSTGRES_USER: имя пользователя базы данных PostgreSQL.
    - POSTGRES_PASSWORD: пароль пользователя базы данных PostgreSQL.
    - DB_HOST: хост базы данных PostgreSQL.
@@ -37,7 +37,7 @@ GitHub Actions
 ### Как развернуть проект локально:
 
 ```
-git clone https://github.com/bignikkk/kittygram_final
+git clone https://github.com/bignikkk/kitty_service
 ```
 
 ```
